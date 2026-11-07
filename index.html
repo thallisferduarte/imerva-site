@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Imerva: experiências de aprendizagem em pequenos passos, no seu ritmo.">
+  <link rel="canonical" href="https://imerva.com.br/">
+  <link rel="icon" href="imerva-logo.png" type="image/png">
+  <title>Imerva — aprender no seu ritmo</title>
+  <style>
+    :root { color-scheme: light; font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #231b3c; background: #f9f7fc; }
+    * { box-sizing: border-box; }
+    body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 76% 22%, #e6dcff 0, transparent 36%), radial-gradient(circle at 12% 78%, #fce8f1 0, transparent 33%), #f9f7fc; }
+    a { color: inherit; text-underline-offset: 4px; }
+    a:focus-visible { outline: 3px solid #8b5bb1; outline-offset: 4px; border-radius: 4px; }
+    .shell { width: min(100% - 40px, 1040px); margin: 0 auto; }
+    header { display: flex; align-items: center; justify-content: space-between; gap: 20px; padding: 26px 0; }
+    .brand { font-size: 1.38rem; font-weight: 850; letter-spacing: -.035em; color: #2c1764; text-decoration: none; }
+    nav { display: flex; align-items: center; flex-wrap: wrap; gap: 20px; font-size: .92rem; font-weight: 600; }
+    nav a { text-decoration: none; }
+    nav a:hover, footer a:hover { color: #7544a8; }
+    main { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(280px, .8fr); align-items: center; gap: clamp(24px, 5vw, 72px); min-height: 65vh; padding: 45px 0 90px; }
+    .eyebrow { display: inline-block; padding: 7px 12px; border: 1px solid #dcd0f3; border-radius: 999px; background: #ffffffaa; color: #674598; font-weight: 750; font-size: .78rem; letter-spacing: .08em; text-transform: uppercase; }
+    h1 { font-size: clamp(2.7rem, 6vw, 5.1rem); line-height: 1.05; letter-spacing: -.06em; margin: 22px 0; max-width: 680px; }
+    h1 span { color: #7545af; }
+    .intro { color: #60576d; font-size: clamp(1.05rem, 1.7vw, 1.22rem); line-height: 1.65; max-width: 590px; margin: 0 0 28px; }
+    .actions { display: flex; flex-wrap: wrap; align-items: center; gap: 12px; }
+    .button { display: inline-flex; align-items: center; min-height: 50px; border-radius: 14px; padding: 12px 20px; background: #392078; color: #fff; text-decoration: none; font-weight: 750; box-shadow: 0 10px 22px #39207824; }
+    .button:hover { background: #58329a; }
+    .secondary { padding: 12px; font-weight: 650; color: #523b78; }
+    .visual { justify-self: center; width: min(100%, 390px); padding: 28px; border-radius: 36px; background: #fff; box-shadow: 0 26px 70px #4e34731b; transform: rotate(2deg); }
+    .visual img { display: block; width: 100%; height: auto; border-radius: 24px; }
+    .visual p { text-align: center; color: #655a74; font-size: .9rem; margin: 14px 0 0; }
+    .info { padding: 26px 0 60px; border-top: 1px solid #e5def0; }
+    .info h2 { font-size: 1.22rem; margin: 0 0 10px; }
+    .info p { color: #60576d; line-height: 1.7; margin: 0; max-width: 740px; }
+    footer { padding: 22px 0 34px; border-top: 1px solid #e5def0; color: #6e6578; font-size: .88rem; display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; }
+    footer div { display: flex; flex-wrap: wrap; gap: 18px; }
+    @media (max-width: 760px) { main { grid-template-columns: 1fr; padding: 48px 0 64px; } .visual { width: min(100%, 290px); transform: rotate(0); } header { align-items: flex-start; } nav { justify-content: flex-end; gap: 10px; } }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header>
+      <a class="brand" href="./" aria-label="Imerva, página inicial">imerva</a>
+      <nav aria-label="Navegação principal">
+        <a href="privacidade/">Privacidade</a>
+        <a href="mailto:suporte@imerva.com.br">Contato</a>
+      </nav>
+    </header>
+    <main>
+      <section aria-labelledby="title">
+        <span class="eyebrow">Aprendizagem em pequenos passos</span>
+        <h1 id="title">Descobrir mais, <span>no seu ritmo.</span></h1>
+        <p class="intro">A Imerva reúne experiências de aprendizagem para você explorar ideias, praticar e seguir adiante um passo de cada vez.</p>
+        <div class="actions">
+          <a class="button" href="mailto:suporte@imerva.com.br">Fale com a Imerva</a>
+          <a class="secondary" href="privacidade/">Leia nossa política de privacidade →</a>
+        </div>
+      </section>
+      <aside class="visual" aria-label="Identidade visual Imerva">
+        <img src="imerva-logo.png" alt="Logotipo da Imerva" width="350" height="350">
+        <p>Um espaço para aprender e experimentar.</p>
+      </aside>
+    </main>
+    <section class="info" aria-labelledby="help-title">
+      <h2 id="help-title">Suporte e seus dados</h2>
+      <p>Para dúvidas sobre o aplicativo, escreva para <a href="mailto:suporte@imerva.com.br">suporte@imerva.com.br</a>. Você pode solicitar ajuda com sua conta por esse contato e consultar como seus dados são tratados na <a href="privacidade/">Política de Privacidade</a>. A exclusão de conta está disponível no app em Perfil → Excluir conta.</p>
+    </section>
+    <footer>
+      <span>© 2026 Imerva · Compilando JA</span>
+      <div><a href="privacidade/">Privacidade</a><a href="mailto:suporte@imerva.com.br">Suporte</a></div>
+    </footer>
+  </div>
+</body>
+</html>
